@@ -21,15 +21,15 @@ The only "fancy" thing we do is ["double-checking"](./jdr/agents/tool_call_agent
 
 ## Installation
 
-We've been using [pixi](https://pixi.sh/latest/):
+Via pip:
+```
+pip install -e .
+```
+
+For development, we've been using [pixi](https://pixi.sh/latest/):
 ```
 pixi install
 pixi shell
-```
-
-You can also use `pip`:
-```
-pip install -e .
 ```
 
 ## Usage
