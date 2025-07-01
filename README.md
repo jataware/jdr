@@ -7,7 +7,7 @@ _SOTA performance on "DeepSearch" benchmarks in < 1500 lines of code_
 
 `jdr` is a minimalist "deep search" reference implementation that achieves state-of-the-art performance on several benchmark datasets.  
 
-Our goal was a system that "fits in your head" - this implementation is intended as a simple, strong starting point for building and testing more complex DR approaches.
+Our goal was a system that "fits in your head" - this implementation is intended as a simple, strong starting point for building and testing more complex DeepSearch/DeepResearch approaches.
 
 ## Implementation Details
  - Base Model: `gemini-2.5-flash-preview-05-20`
