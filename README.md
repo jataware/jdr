@@ -17,7 +17,7 @@ Our goal was a system that "fits in your head" - this implementation is intended
 
 ### "Double-Checking"
 
-The only "fancy" thing we do is ["double-checking"](./jdr/agents/tool_call_agent.py#L148) - after the agent answers a question, we have it review it's work and make sure it didn't make a stupid mistake or obviously hallucinate.  This is a apparently a common failure mode and "double-checking" boosts performance substantially (e.g. 6 percentage point boost on FRAMES).
+The only "fancy" thing we do is ["double-checking"](./jdr/agents/tool_call_agent.py#L148) - after the agent answers a question, we have it review it's work and make sure it didn't make a stupid mistake or obviously hallucinate.  This is a apparently a common failure mode - we observe that "double-checking" boosts performance substantially (e.g. 6 percentage point boost on FRAMES).
 
 ## Installation
 
