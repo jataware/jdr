@@ -5,7 +5,7 @@ _SOTA performance on "DeepSearch" benchmarks in < 1500 lines of code_
   <img src="./assets/logo.png">
 </p>
 
-`jdr` is a minimalist "deep search" reference implementation that achieves state-of-the-art performance on several benchmark datasets.  
+`jdr` is a minimalist "DeepSearch" reference implementation that achieves state-of-the-art performance on several benchmark datasets.  
 
 Our goal was a system that "fits in your head" - this implementation is intended as a simple, strong starting point for building and testing more complex DeepSearch/DeepResearch approaches.
 
@@ -15,9 +15,9 @@ Our goal was a system that "fits in your head" - this implementation is intended
    - [SERP](https://serpapi.com/) for search
    - [JINA Reader](https://r.jina.ai/) for page scraping
 
-### "Double-Checking"
+### Double-Checking
 
-The only "fancy" thing we do is ["double-checking"](./jdr/agents/tool_call_agent.py#L148) - after the agent answers a question, we have it review it's work and make sure it didn't make a stupid mistake or obviously hallucinate.  This is a apparently a common failure mode - we observe that "double-checking" boosts performance substantially (e.g. 6 percentage point boost on FRAMES).
+The only non-standard thing we do is ["double-checking"](./jdr/agents/tool_call_agent.py#L148) - after the agent answers a question, we have it review its work and make sure it didn't make a stupid mistake or obviously hallucinate.  We observe this to be a common failure mode - the LLM forgets something it saw previously in context, or skips a tool call and hallucinates the result.  Double-checking boosts performance substantially (e.g. 6 percentage point boost on FRAMES).
 
 ## Installation
 
