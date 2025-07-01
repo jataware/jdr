@@ -55,6 +55,11 @@ python -m jdr.benchmark --dataset seal0
 python -m jdr.benchmark --dataset simpleqa --sample 400
 ```
 
+Pretty-printing traces:
+```
+python -m jdr.pretty --file path/to/result.json --max-chars 0
+```
+
 ## Benchmarks
 
 We benchmark on
