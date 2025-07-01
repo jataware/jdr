@@ -172,10 +172,11 @@ if __name__ == "__main__":
             "asearch_serp_multi" : asearch_serp_multi,
             "ascrape_jina"       : ascrape_jina,
         },
-        special_instructions = "Today's date is June 23, 2025. You strongly prefer using Wikipedia as your source of information.  If you can't completely answer the question using Wikipedia, you're welcome to visit other sites.  Remember to actually visit the webpages using `ascrape_jina`."
+        special_instructions = "Today's date is June 23, 2025. You strongly prefer using Wikipedia as your source of information.  If you can't completely answer the question using Wikipedia, you're welcome to visit other sites.  Remember to actually visit the webpages using `ascrape_jina`.",
+        do_double_check      = True,
     )
     
-    result = asyncio.run(agent.arun(args.query, do_double_check="v2"))
+    result = asyncio.run(agent.arun(args.query))
     
     if args.evaluator:
         assert args.target is not None, "Target is required for evaluation"

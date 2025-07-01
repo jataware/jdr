@@ -41,7 +41,7 @@ export SERPAPI_API_KEY=...
 export JINA_API_KEY=...
 
 python -m jdr.agents.tool_call_agent \
-  --query "In which year and month did El Cielo receive its first Michelin star in Miami?"
+  --query "The lead actor who plays the regional manager of this popular mockumentary sitcom released in 2005 has the same initials as Santa Claus. What is the name of the voice actor for Flower in the latest animated film this actor starred in in 2024?"
 ```
 
 Benchmarks:

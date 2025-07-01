@@ -1,0 +1,7 @@
+.cache/*
+results/*
+
+# pixi environments
+.pixi
+*.egg-info
+*.pyc
