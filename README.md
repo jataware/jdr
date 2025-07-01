@@ -1,11 +1,11 @@
 # jdr
-_SOTA performance on "Deep Research" benchmarks in < 1500 lines of code_
+_SOTA performance on "DeepSearch" benchmarks in < 1500 lines of code_
 
 <p align="center">
   <img src="./assets/logo.png">
 </p>
 
-`jdr` is a minimalist "deep research" implementation that achieves state-of-the-art performance on several benchmark datasets.  
+`jdr` is a minimalist "deep search" reference implementation that achieves state-of-the-art performance on several benchmark datasets.  
 
 Our goal was a system that "fits in your head" - this implementation is intended as a simple, strong starting point for building and testing more complex DR approaches.
 
@@ -95,3 +95,10 @@ In the table above, we report what we think "the correct" grader is for each cla
 
 **Community convergence on a standardized grading prompt, base model, and parameter settings for these kinds of tasks would be wonderful.**  We think the SimpleQA grader is probably appropriate for most of these kinds of tasks, and is already somewhat standardized.  However, we've seen different parameter settings used by different groups.  Additionally, the grader should probably be run multiple times per query to reduce variation coming from the scorer.
 
+## DeepSearch vs DeepResearch
+
+"DeepResearch" is the more commonly used term, [jina.ai] differentiates between the two well:
+> DeepSearch runs through an iterative loop of searching, reading, and reasoning until it finds the optimal answer.
+> DeepResearch builds upon DeepSearch by adding a structured framework for generating long research reports
+
+We consider `jdr` to be a DeepSearch tool. 
